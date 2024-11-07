@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
-import sys
-import requests
-
 """
 This script retrieves and displays an employee's TODO list progress
 using the JSONPlaceholder API. It accepts an employee ID as a parameter
 and outputs the completed tasks and the overall task progress.
 """
+
+
+import sys
+import requests
 
 
 def fetch_employee_todo_progress(employee_id):
