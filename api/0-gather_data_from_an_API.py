@@ -37,7 +37,8 @@ def fetch_employee_todo_progress(employee_id):
     done_tasks = [task for task in todos if task.get("completed")]
     number_of_done_tasks = len(done_tasks)
 
-    print(f"Employee {employee_name} is done with tasks({number_of_done_tasks}/{total_tasks}):")
+    print(f"Employee {employee_name}\
+        is done with tasks({number_of_done_tasks}/{total_tasks}):")
 
     for task in done_tasks:
         print(f"\t {task.get('title')}")
