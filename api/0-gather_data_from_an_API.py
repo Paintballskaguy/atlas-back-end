@@ -5,8 +5,9 @@ import requests
 
 
 """
-Script to retrieve employee info from the json place holder api.
-It accepts the  employee id as the locator.
+This script retrieves and displays an employee's TODO list progress
+using the JSONPlaceholder API. It accepts an employee ID as a parameter
+and outputs the completed tasks and the overall task progress.
 """
 
 
