@@ -2,6 +2,8 @@
 
 import sys
 import requests
+
+
 """
 Script to retrieve employee info from the json place holder api.
 It accepts the  employee id as the locator.
