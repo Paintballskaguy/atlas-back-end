@@ -17,7 +17,9 @@ def fetch_employee_todo_progress(employee_id):
     Args:
         employee_id (_type_): _description_
     """
-    user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
+    user_url = (
+        f"https://jsonplaceholder.typicode.com/users/{employee_id}"
+        )
     user_response = requests.get(user_url)
     if user_response.status_code != 200:
         print("Employee not found")
@@ -25,7 +27,9 @@ def fetch_employee_todo_progress(employee_id):
 
     employee_name = user_response.json().get("name")
 
-    todos_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}/todos"
+    todos_url = (
+        f"https://jsonplaceholder.typicode.com/users/{employee_id}/todos"
+        )
     todos_response = requests.get(todos_url)
     todos = todos_response.json()
 
