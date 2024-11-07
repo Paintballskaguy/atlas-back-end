@@ -6,9 +6,9 @@ using the JSONPlaceholder API. It accepts an employee ID as a parameter
 and outputs the completed tasks and the overall task progress.
 """
 
-
-import sys
 import requests
+import sys
+
 
 
 def fetch_employee_todo_progress(employee_id):
