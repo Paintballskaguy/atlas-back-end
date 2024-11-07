@@ -49,7 +49,7 @@ def fetch_employee_todo_progress(employee_id):
         print(f"\t {task.get('title')}")
 
     csv_filename = f"{employee_id}.csv"
-    with open(csv_filename, mode="w", newline=" ") as csv_file:
+    with open(csv_filename, mode="w", newline="") as csv_file:
         csv_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         for task in todos:
             csv_writer.writerow([
