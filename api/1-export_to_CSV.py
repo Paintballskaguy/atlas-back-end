@@ -52,9 +52,12 @@ def fetch_employee_todo_progress(employee_id):
     with open(csv_filename, mode="w", newline=" ") as csv_file:
         csv_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         for task in todos:
-            csv_writer.writerow(
-                [employee_id, username, task["completed"], task["title"]]
-                )
+            csv_writer.writerow([
+                [employee_id, 
+                username,
+                task["completed"],
+                task["title"]]
+                ])
     print(f"Data exported to {csv_filename}")
 
 
