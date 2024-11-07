@@ -3,7 +3,6 @@
 import sys
 import requests
 
-
 """
 This script retrieves and displays an employee's TODO list progress
 using the JSONPlaceholder API. It accepts an employee ID as a parameter
