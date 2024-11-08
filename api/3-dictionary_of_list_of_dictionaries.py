@@ -20,11 +20,11 @@ def fetch_employee_todo_progress(employee_id):
         employee_id (int): The ID of the employee.
     """
     user_url = f"https://jsonplaceholder.typicode.com/users/"
-    user_response = requests.get(user_url)
-    users = user_response.json()
+    users_response = requests.get(users_url)
+    users = users_response.json()
 
     todos_url = (
-        f"https://jsonplaceholder.typicode.com/users/todos"
+        f"https://jsonplaceholder.typicode.com/todos"
         )
     todos_response = requests.get(todos_url)
     todos = todos_response.json()
