@@ -66,7 +66,7 @@ def fetch_employee_todo_progress(employee_id):
                 "task": task["title"],
                 "completed": task["completed"],
                 "username": username
-            }
+            } for task in todos
         ]
     }
 
