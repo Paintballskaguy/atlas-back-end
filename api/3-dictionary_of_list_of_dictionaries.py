@@ -19,7 +19,7 @@ def fetch_employee_todo_progress(employee_id):
     Args:
         employee_id (int): The ID of the employee.
     """
-    user_url = f"https://jsonplaceholder.typicode.com/users/"
+    users_url = f"https://jsonplaceholder.typicode.com/users/"
     users_response = requests.get(users_url)
     users = users_response.json()
 
