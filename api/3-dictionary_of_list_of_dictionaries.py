@@ -3,7 +3,8 @@
 """
 This script retrieves and displays an employee's TODO list progress
 using the JSONPlaceholder API. It accepts an employee ID as a parameter,
-outputs the completed tasks and the overall task progress, and exports the data to JSON.
+outputs the completed tasks and
+the overall task progress, and exports the data to JSON.
 """
 
 import json
@@ -27,7 +28,9 @@ def fetch_employee_todo_progress(employee_id):
     user_data = user_response.json()
     username = user_data.get("username")
 
-    todos_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}/todos"
+    todos_url = (
+        f"https://jsonplaceholder.typicode.com/users/{employee_id}/todos"
+        )
     todos_response = requests.get(todos_url)
     todos = todos_response.json()
 
