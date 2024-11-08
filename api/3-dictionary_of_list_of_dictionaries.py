@@ -2,7 +2,8 @@
 
 """
 This script retrieves and exports the TODO list progress for all employees
-using the JSONPlaceholder API. It exports data to a JSON file in the specified format.
+using the JSONPlaceholder API.
+It exports data to a JSON file in the specified format.
 """
 
 import json
@@ -13,9 +14,9 @@ def fetch_all_employees_todo_progress():
     """
     Retrieves and exports the TODO list progress for all employees
     to a JSON file in the format:
-    { "USER_ID": [{"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ] }
+    { "USER_ID": [{"username": "USERNAME",
+    "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ] }
     """
-
 
     users_url = "https://jsonplaceholder.typicode.com/users"
     users_response = requests.get(users_url)
