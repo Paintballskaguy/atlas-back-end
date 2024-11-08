@@ -63,9 +63,9 @@ def fetch_employee_todo_progress(employee_id):
     json_data = {
         str(employee_id): [
             {
-            "task": task["title"],
-            "completed":task["completed"],
-            "username": username
+                "task": task["title"],
+                "completed": task["completed"],
+                "username": username
             }
         ]
     }
